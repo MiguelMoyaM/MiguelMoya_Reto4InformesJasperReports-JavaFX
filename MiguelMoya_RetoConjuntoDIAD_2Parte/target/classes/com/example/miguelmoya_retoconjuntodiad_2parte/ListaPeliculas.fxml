@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miguelmoya_retoconjuntodiad_2parte.controller.ListaPeliculasController">
+   <children>
+      <ScrollBar layoutX="893.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="14.0" />
+      <Label fx:id="mensajeBienvenidaLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="358.0" layoutY="14.0" prefHeight="25.0" prefWidth="191.0" text="Hola, nombreUsuario" textAlignment="JUSTIFY">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="59.0" prefHeight="17.0" prefWidth="207.0" text="Aqui tienes un listado de sus peliculas:" />
+      <TableView fx:id="peliculaTableView" layoutX="24.0" layoutY="100.0" prefHeight="428.0" prefWidth="849.0">
+        <columns>
+          <TableColumn fx:id="tituloTableColumn" prefWidth="187.0" text="Titulo" />
+          <TableColumn fx:id="directorTableColumn" prefWidth="126.0" text="Director" />
+            <TableColumn fx:id="duracionTableColumn" prefWidth="107.0" text="Duracion" />
+            <TableColumn fx:id="añoTableColumn" prefWidth="88.0" text="Año" />
+            <TableColumn fx:id="generoTableColumn" prefWidth="112.0" text="Genero" />
+            <TableColumn fx:id="estadoTableColumn" prefWidth="124.0" text="Estado" />
+            <TableColumn fx:id="detallesTableColumn" prefWidth="120.0" text="Más detalles" />
+
+        </columns>
+      </TableView>
+      <Button fx:id="agregarNuevaCopiaButton" layoutX="395.0" layoutY="560.0" mnemonicParsing="false" onAction="#agregarNuevaCopiaOnActionButton" text="Agregar nueva copia" />
+      <Button fx:id="agregarNuevaPeliculaButton" layoutX="755.0" layoutY="560.0" mnemonicParsing="false" onAction="#agregarNuevaPeliculaOnActionButton" text="Agregar nueva pelicula" visible="false" />
+      <Button layoutX="14.0" layoutY="560.0" mnemonicParsing="false" onAction="#cerrarSesionOnActionButton" text="Cerrar Sesion" />
+      <ComboBox fx:id="comboBox" layoutX="576.0" layoutY="64.0" prefHeight="25.0" prefWidth="207.0" />
+      <Button layoutX="798.0" layoutY="64.0" mnemonicParsing="false" onAction="#MostrarInformeOnActionButton" text="Mostrar" />
+   </children>
+</AnchorPane>

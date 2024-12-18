@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F59A5B;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miguelmoya_retoconjuntodiad_2parte.controller.CreateAccountController">
+    <children>
+        <AnchorPane layoutX="-2.0" prefHeight="82.0" prefWidth="609.0" style="-fx-background-color: #F56E5B;">
+            <children>
+                <Label alignment="TOP_CENTER" layoutX="167.0" layoutY="16.0" prefHeight="50.0" prefWidth="300.0" text="CREAR CUENTA" textAlignment="JUSTIFY">
+                    <font>
+                        <Font name="Ebrima Bold" size="25.0" />
+                    </font>
+                    <padding>
+                        <Insets top="16.0" />
+                    </padding>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label contentDisplay="CENTER" layoutX="255.0" layoutY="124.0" prefHeight="27.0" prefWidth="95.0" text="Nombre:">
+            <font>
+                <Font name="DejaVuMathTeXGyre-Regular" size="18.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="nombreCreateAccountTextArea" layoutX="203.0" layoutY="163.0" prefHeight="27.0" prefWidth="200.0" />
+        <Label contentDisplay="CENTER" layoutX="245.0" layoutY="211.0" prefHeight="27.0" prefWidth="116.0" text="Contraseña:">
+            <font>
+                <Font name="DejaVuMathTeXGyre-Regular" size="18.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="contraseñaCreateAccountPasswordField" layoutX="204.0" layoutY="238.0" prefHeight="37.0" prefWidth="200.0" />
+        <Button layoutX="252.0" layoutY="318.0" mnemonicParsing="false" onAction="#onRegistrarButtonAction" prefHeight="37.0" prefWidth="101.0" text="Registrar">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+      <Button fx:id="conCuentaButton" layoutX="341.0" layoutY="283.0" mnemonicParsing="false" onAction="#onConCuentaButtonOnAction" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #F59A5B;" text="Ya tengo cuenta" textFill="#1933a6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <CheckBox fx:id="adminCheckBox" layoutX="204.0" layoutY="287.0" mnemonicParsing="false" text="Admin" />
+    </children>
+</AnchorPane>

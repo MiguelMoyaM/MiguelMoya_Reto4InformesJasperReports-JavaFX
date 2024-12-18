@@ -1,0 +1,14 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/retoConjunto</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <property name="show_sql">true</property>
+
+        <mapping class="com.example.miguelmoya_retoconjuntodiad_2parte.model.Usuario"/>
+        <mapping class="com.example.miguelmoya_retoconjuntodiad_2parte.model.Pelicula"/>
+        <mapping class="com.example.miguelmoya_retoconjuntodiad_2parte.model.Copia"/>
+
+    </session-factory>
+</hibernate-configuration>
